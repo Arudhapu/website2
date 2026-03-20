@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(53, 103, 212,0.7);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+   
+}
+.navbar__logo img{
+    width: 80px;
+    border-radius: 50%;
+}
+.navbar__list ul{
+    display: flex;
+    gap: 20px; 
+    list-style-type: none;
+    display: none;
+    
+}
+.navbar__list a{
+    color: white;
+}
+.navbar__icon{
+    color: rgb(255, 255, 255);
+}
+.hero{
+    position:relative;
+    height:250px;
+}
+.hero img{
+    width:100%;
+    height:auto;
+}
+.hero__text{
+    position:absolute;
+    top:24%;
+    left:6%;
+    color:rgb(4, 4, 4);
+    text-align:center;
+    font-size: 25px;
+}
+.hero__btn{
+    background-color:rgba(0, 81, 121, 0.9) ;
+    padding: 5px 9px;
+    color:rgb(255, 255, 255);
+    border:none;
+    border-radius:2px;
+    cursor:pointer;
+}
+.hero__btn:active{
+    background-color:  rgba(66, 143, 244, 0.895);
+}
+.about__intro,.about__text{
+    padding: 10px;
+}
+.about__btn{
+    padding: 5px 9px;
+    margin-top: 10px;
+    background-color:rgba(0, 81, 121, 0.9);
+    color: white;border:none;
+    border-radius:2px;
+    cursor:pointer;
+}
+.about__btn:active{
+    background-color:  rgba(66, 143, 244, 0.895);
+}
+.main__features{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    text-align: center;
+}
+.main__card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.services__list{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    text-align: center;
+    padding: 10px;
+}
+.services__card{
+    background-color: rgb(160, 181, 229,0.7);
+    border-radius:10px ;
+    padding: 10px;
+}
+.services__card:hover{
+    background-color: rgba(28, 89, 230, 0.7);
+}
+.main,.about,.services,.gallery,.clients{
+    padding: 10px;
+}
+.gallery__card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius: 15px;
+}
+.gallery__card{
+    padding: 5px;
+    border-radius: 15px;
+}
+.gallery__card:hover{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.clients__grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    justify-content: center;
+    
+}
+.clients__card{
+    border: 2px solid rgb(8, 19, 46);
+    padding: 2px;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.clients__card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.foot{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+h3{
+    text-decoration: underline;
+}
+.foot__social,.foot__pages,.foot__address{
+    padding: 10px 15px;
+}
+.foot__about p{
+     padding: 10px 15px;
+     font-family:Arial, Helvetica, sans-serif;
+}
+.foot__social i{
+     padding: 10px 15px;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-instagram{
+    color: rgb(218, 34, 190);
+}
+.fa-facebook{
+    color: blue;
+}
+.foot__pages li{
+    list-style-type: none;
+    padding: 10px;
+}
+.foot__pages a{
+    text-decoration: none;
+    color: white;
+}
+.foot__pages a:hover{
+    text-decoration: underline;
+}
+.foot__address p{
+    padding: 10px;
+}
+.foot__last{
+    text-align: center;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+@media (min-width:600px){
+    .navbar{
+        display: flex;
+    }
+    .navbar__list ul{
+        display: flex;
+        font-size: 25px;
+    }
+    .navbar__list a{
+        text-decoration: none;
+    }
+    .navbar__list a:hover{
+        text-decoration:underline;
+    }
+    .navbar__icon{
+        display: none;
+    }
+    .hero{
+    position:relative;
+    height: auto;
+    }
+    .hero__text{
+    position:absolute;
+    top:24%;
+    left:6%;
+    color:rgb(4, 4, 4);
+    text-align:center;
+    font-size: 30px;
+    padding: 50px 80px 50px 80px;
+    }
+    .hero__btn{
+        padding: 10px;
+    }
+    .about__para{
+        display: flex;
+        font-size: 25px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .services__card{
+        padding: 50px;
+    }
+    .services__card p{
+        font-size: 20px;
+    
+    }
+    .gallery__list{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2,400px);
+        justify-content: center; 
+    }
+
+    .clients__grid{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+    }
+    .clients__card{
+        padding: 30px;
+    }
+    .foot{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 30px 50px;  
+    }
+    .foot__about{
+        max-width: 300px;
+    }
+
+}
